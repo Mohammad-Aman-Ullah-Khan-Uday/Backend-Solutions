@@ -1,0 +1,14 @@
+<%- include('partials/header') %>
+    <h1>Disease List</h1>
+    <div class="" style="margin: 1em;">
+        <ol>
+            <% for(let element of result) { %>
+                <li>
+                    <%= element.dName %>
+                        <a href="https://shiny-gray-capybara.cyclic.app/disease/<%=element.id%>/edit">edit</a>
+                </li>
+                <% } %>
+        </ol>
+    </div>
+
+    <%- include('partials/footer') %>
